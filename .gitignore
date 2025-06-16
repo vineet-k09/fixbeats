@@ -1,0 +1,8 @@
+node_modules
+.vscode
+out/test
+.git
+.vscode-test
+.vscodeignore
+*.mp3
+dist/

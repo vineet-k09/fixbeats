@@ -9,32 +9,34 @@ Because debugging deserves a vibe check.
 
 ## ✨ Features
 
-- Detects when errors (red squiggles) are resolved in your code
+- Detects when errors (red squiggles) are resolved
 - Automatically plays a chill `.wav` lo-fi beat
-- One-line command to trigger it manually: `FixBeats: Play`
+- Manual trigger via `FixBeats: Play` command
 - Cross-platform (Windows & Linux tested)
 
 ---
 
 ## 🚀 Installation
 
-- **From Marketplace (soon):** Just search for `FixBeats`
-- **Manually:**
+- **Marketplace:**  
+  👉 [Install from VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=vineetKushwaha.fixbeats)
+
+- **Manual:**
 ```bash
-  vsce package
-  code --install-extension fixbeats-1.0.0.vsix
+code --install-extension fixbeats-1.0.0.vsix
 ```
 
 ---
 
 ## 🛠️ Development
-**Scaffolded using yo code:**
+
+Scaffolded using `yo code`:
 ```bash
 npm install -g yo generator-code
 yo code
 ```
 
-**Run it locally:**
+Run locally:
 ```bash
 npm install
 npm run compile
@@ -43,11 +45,11 @@ code --extensionDevelopmentPath=.
 
 ---
 
-## 🗂️ File Structure (Built .vsix)
+## 🗂️ File Structure (Packaged .vsix)
 ```bash
 fixbeats-1.0.0.vsix
 ├── dist/extension.js
-├── media/lofi.wav,icon.jpg
+├── media/lofi.wav, icon.jpg
 ├── package.json
 ├── README.md
 ├── CHANGELOG.md
@@ -57,15 +59,15 @@ fixbeats-1.0.0.vsix
 ---
 
 ## ❤️ Contributing
-Pull requests are welcome, especially if you can:
 
-- Add volume config support
+Pull requests are welcome, especially for:
 
-- Add file selector for custom sounds
-
-- Improve performance on large projects
+- Volume control support
+- Custom sound file selector
+- Performance tuning for large workspaces
 
 ---
 
 ## 📄 License
+
 MIT — use it, remix it, vibe with it.

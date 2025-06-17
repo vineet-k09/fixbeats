@@ -1,28 +1,71 @@
-# fixbeats
-# VS Code Debug Jams 🎧
+# 🎧 FixBeats — VS Code Debug Jams
 
-Turns error fixing into a lo-fi party.  
-Every time you fix a red squiggly error, a lo-fi beat plays to reward your brain.  
-Because bug fixing should slap.
+Turns bug-fixing into a lo-fi celebration.
 
-## Features
-- Detects error count drop via diagnostics
-- Plays a custom lo-fi `.mp3` on error fix
-- Configurable volume and toggle in settings
+Every time you fix a red squiggly error, a smooth lo-fi beat plays to reward your brain.  
+Because debugging deserves a vibe check.
 
-## 🔧 PART 1: Extension Skeleton (using yo code)
-You’ll need to scaffold a VS Code extension:4
+---
 
-```shell
-npm install -g yo generator-code
+## ✨ Features
+
+- Detects when errors (red squiggles) are resolved in your code
+- Automatically plays a chill `.wav` lo-fi beat
+- One-line command to trigger it manually: `FixBeats: Play`
+- Cross-platform (Windows & Linux tested)
+
+---
+
+## 🚀 Installation
+
+- **From Marketplace (soon):** Just search for `FixBeats`
+- **Manually:**
+```bash
+  vsce package
+  code --install-extension fixbeats-1.0.0.vsix
 ```
-```shell
+
+---
+
+## 🛠️ Development
+**Scaffolded using yo code:**
+```bash
+npm install -g yo generator-code
 yo code
 ```
-***New Extension (TypeScript)***
 
-## Final steps
+**Run it locally:**
 ```bash
+npm install
 npm run compile
 code --extensionDevelopmentPath=.
 ```
+
+---
+
+## 🗂️ File Structure (Built .vsix)
+```bash
+fixbeats-1.0.0.vsix
+├── dist/extension.js
+├── media/lofi.wav,icon.jpg
+├── package.json
+├── README.md
+├── CHANGELOG.md
+└── types/play-sound.d.ts
+```
+
+---
+
+## ❤️ Contributing
+Pull requests are welcome, especially if you can:
+
+- Add volume config support
+
+- Add file selector for custom sounds
+
+- Improve performance on large projects
+
+---
+
+## 📄 License
+MIT — use it, remix it, vibe with it.

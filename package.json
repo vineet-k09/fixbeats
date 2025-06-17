@@ -1,8 +1,9 @@
 {
   "name": "fixbeats",
   "displayName": "fixbeats",
+  "publisher": "vineetKushwaha",
   "description": "Every time you fix a red squiggly error, a lo-fi beat plays to reward your brain.  ",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.101.0"
   },
@@ -20,7 +21,15 @@
   ],
   "icon": "media/icon.jpg",
   "activationEvents": [
-    "*"
+    "onLanguage:python",
+    "onLanguage:javascript",
+    "onLanguage:typescript",
+    "onLanguage:java",
+    "onLanguage:c",
+    "onLanguage:cpp",
+    "onLanguage:go",
+    "onLanguage:rust",
+    "onStartupFinished"
   ],
   "repository": {
     "type": "git",
@@ -30,11 +39,18 @@
   "contributes": {
     "commands": [
       {
-        "command": "fixbeats.helloWorld",
-        "title": "Hello World"
+        "command": "fixbeats.play",
+        "title": "Play Lofi Music"
       }
     ]
   },
+  "files": [
+    "media/",
+    "dist/",
+    "types/",
+    "README.md",
+    "CHANGELOG.md"
+  ],
   "scripts": {
     "vscode:prepublish": "npm run package",
     "compile": "npm run check-types && npm run lint && node esbuild.js",
@@ -64,6 +80,13 @@
   },
   "dependencies": {
     "@types/play-sound": "^1.1.2",
+    "node-wav-player": "^1.0.0",
     "play-sound": "^1.1.6"
+  },
+  "compilerOptions": {
+    "typeRoots": [
+      "./types",
+      "./node_modules/@types"
+    ]
   }
 }

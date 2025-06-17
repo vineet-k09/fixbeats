@@ -6,3 +6,4 @@ out/test
 .vscodeignore
 *.mp3
 dist/
+*.vsix
